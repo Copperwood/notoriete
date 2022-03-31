@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+      }
+      .w3-row-padding img {
+        margin-bottom: 12px;
+      }
+      .bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("https://cdn.discordapp.com/attachments/914901099394236476/953053272422375424/test2-bgcp.png");
+        min-height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width: 40%;">
+      <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav
+      class="w3-sidebar w3-black w3-animate-right w3-xxlarge"
+      style="display: none; padding-top: 150px; right: 0; z-index: 2;"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="closeNav()"
+        class="w3-button w3-black w3-xxxlarge w3-display-topright"
+        style="padding: 0 12px;"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="w3-bar-block w3-center">
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Acceuil</a
+        >
+        <a
+          href="#About"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+        >Quel monde dirige-t-il</a
+        >
+        <a
+          href="#World"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Qui est-il ?</a
+        >
+        <a
+          href="#Skills"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Ses compétences</a
+        >
+        <a
+          href="#Id_cards"
+          class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+          onclick="closeNav()"
+          >Ses protégés</a
+        >
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left: 40%;">
+      <!-- Menu icon to open sidebar -->
+      <span
+        class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black"
+        style="width: auto; right: 0;"
+        onclick="openNav()"
+        ><i class="fa fa-bars"></i
+      ></span>
+
+      <!-- Header -->
+      <header
+        class="w3-container w3-center"
+        style="padding: 128px 16px;"
+        id="home"
+      >
+        <h1 class="w3-jumbo"><b>SIRIUS COPPERWOOD</b></h1>
+        <p>Ultime Espoir, Président élu des 10 conseils</p>
+        <img
+          src="fb_commandant.png"
+          class="w3-image w3-hide-large w3-hide-small w3-round"
+          style="display: block; width: 60%; margin: auto;"
+        />
+        <img
+          src="fb_commandant.png"
+          class="w3-image w3-hide-large w3-hide-medium w3-round"
+          width="1000"
+          height="1333"
+        />
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="About">
+        <h2>Qui est-il ?</h2>
+        <hr class="w3-opacity" />
+        <p>
+          Sirius Copperwood, né le 1er août 1982, est l'actuel
+          <i><b>Ultime Espoir</b></i> mondial. Il est président de
+          <i><b>Kether</b></i
+          >, l'unique conseil majeur parmi les <i><b>10 Conseils</b></i> ,
+          leader dans la prise de décision de la communauté des Ultimes du monde
+          entier. Connu internationalement, il est également réputé comme étant
+          la personnalité qui a apporté la stabilité dans le monde moderne,
+          notamment en <i><b>mettant les Ultimes au premier plan et en leur octroyant
+          davantages de pouvoirs décisionnels et de visibilité, en accord avec
+          les gouvernements du monde entier</b></i>.
+        </p>
+        <div style="margin-left: 25%; margin-right: 25%;">
+          <q style="font-size: larger;"
+            ><i
+              >L'espoir est une notion fondamentale de notre monde, et elle doit
+              être protégée quel qu'en soit le coût.</i
+            ></q
+          >
+        </div>
+      </div>
+      <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="World">
+        <h2>Quel monde dirige-t-il ?</h2>
+        <hr class="w3-opacity" />
+        <p>
+          Suite à de nombreux échecs dans une approche d'un monde pacifique post
+          seconde guerre mondiale, des associations d'Ultimes ont dans un
+          premier temps construit des écoles et des institutions dans l'objectif
+          de protéger les talents de demain. Au bout d'une trentaine d'années,
+          plusieurs écoles du pays ont commencé à construire des conseils
+          privés, capables de prendre en main les affaires de beaucoup de pays
+          derrière les rideaux. 
+        </p>
+          
+          <p>Cette ingérence a causé un grand conflit avec
+          les scènes politiques sur les différents continents, menaçant la paix
+          mondiale. Ainsi, le 20 décembre 2012, à seulement 30 ans, <i><b>Sirius 
+            Copperwood prend la tête incontestée de
+          l'humanité en tant qu'Ultime Espoir</b></i>, déjouant les prophéties de fin du
+          monde que beaucoup d'Ultimes avaient corrélé avec la situation
+          diplomatique pressante. Il a depuis remis de l'ordre dans un monde où
+          les Ultimes sont les nouveaux guides de l'humanité.
+        </p>
+
+        <div style="margin-left: 25%; margin-right: 25%;">
+            <q style="font-size: larger;"
+              ><i>Au moment où vous penserez que vous ne pourrez plus croire en personne,
+                 croyez en moi.</i
+              ></q
+            >
+          </div>
+
+        <p>
+          Sirius Copperwood supervise ainsi l'ensemble des 10 Conseils, qui
+          se répartissent la carte du monde pour guider les hommes politiques de
+          chaque pays à prendre les décisions de demain. De plus, <i><b>ces Conseils
+          ont une vue sur tous les Ultimes de ce monde, et chacun fait remonter
+          à Kether, et par conséquent à Copperwood, toutes les nominations et
+          activités</b></i>.
+        </p>
+        <br />
+        <img src="Carte-conseils.png" style="width: 80%;margin-top:20px; display: block; margin-left: auto; margin-right: auto;" />
+        <p style="font-size: smaller;margin-left: 10%; margin-right: 10%;">
+            <i> Carte des 10 Conseils et leur influence sur les différents pays du monde. Kether (1),
+              positionné sur l'île Japonaise d'Hokkaido, est lieu du QG de Copperwood. Gueburah (2) est le conseil
+              qui gère le reste du Japon, un terreau dense pour les Ultimes. Enfin, Tiphareth (3), se charge de 
+              l'europe de l'ouest, autre région formatrice de talents.</i>
+        </p>
+        <div
+          class="w3-content w3-justify w3-text-grey w3-padding-32"
+          id="Skills"
+        >
+          <h2>Ses compétences</h2>
+          <hr class="w3-opacity" />
+          <p>
+            Copperwood fait partie des rares individus capable de s'illuster dans le domaine dit de la "chasse aux talents".
+            Cette discipline très rare et demandant un haut niveau d'exigence n'est capable d'être accomplie que par les 
+            êtres les plus complets, et est longtemps resté quelque chose de tabou, a cause du fait que dans une discipline donnée,
+            l'attribution d'un titre est limitée au maximum d'un par an. Ainsi, avant d'être Ultime Espoir, Copperwood à cumulé 
+            des titres tels que :
+            <ul>
+                <li>Ultime Stratège (2006)</li>
+                <li>Ultime Leader (2010)</li>
+                <li>Ultime Escrimeur (2013)</li>
+                <li>Et bien d'autres...</li>
+            </ul>
+            Les analystes du monde entier le décrivent donc comme quelqu'un qui n'a aucun égal dans le monde moderne. Intelligent,
+            redoutable en politique, il a déjoué nombre de pièges associés au pouvoir. Fort, robuste, fiable, il n'a même pas besoin de garde 
+            du corps.
+          </p>
+          <p>
+            Il n'y a pas plus fort que Copperwood.
+          </p>
+          <br />
+          <p class="w3-wide">Force</p>
+          <div class="w3-light-grey">
+            <div
+              class="w3-container w3-center w3-padding-small w3-dark-grey"
+              style="width: 100%;"
+            >
+              100
+            </div>
+          </div>
+          <p class="w3-wide">Intelligence</p>
+          <div class="w3-light-grey">
+            <div
+              class="w3-container w3-center w3-padding-small w3-dark-grey"
+              style="width: 100%;"
+            >
+              100
+            </div>
+          </div>
+          <p class="w3-wide">Charisme</p>
+          <div class="w3-light-grey">
+            <div
+              class="w3-container w3-center w3-padding-small w3-dark-grey"
+              style="width: 100%;"
+            >
+              100
+            </div>
+          </div>
+          <br />
+        </div>
+
+        <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">40</span><br />
+            Révolutions autour du soleil
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">30</span><br />
+            Ultimes cumulés avant son élection
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">10+</span><br />
+            Organisations démantelées
+          </div>
+          <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">69+</span><br />
+            Pages d'admiratrices sur Facebook
+          </div>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div
+          class="w3-content w3-justify w3-text-grey w3-padding-32"
+          id="Id_cards"
+        >
+          <h2>Ses protégés</h2>
+          <hr class="w3-opacity" />
+          <p>
+            En 2018, Copperwood signe la loi <i><b>NFT (New Found Talent)</i></b>. Cette loi, entrée immédiatement en vigueur,
+            a davantage poussé la protection des Ultimes en leur prévoyant une place de choix en cas de catastrophe.
+            Dorénavant, d'un simple bouton, Copperwood est en capacité d'envoyer plusieurs escouades de choc capables
+            d'immédiatement <i><b>cryogéniser les Ultimes</i></b> et les placer dans un Bunker protégé et autonome. 
+          </p>
+          <p>
+              Voici ci-dessous un échantillon de ses "protégés"...
+            </p>
+  
+
+          <!-- Grid for photos -->
+          <div class="w3-row-padding" style="margin: 0 -16px;">
+            <div class="w3-full">
+              <img src="ISAO.png" style="width: 100%;" />
+              <img
+                src="test_mini2.png"
+                alt="Avatar"
+                class="w3-left w3-circle w3-margin-right"
+                style="width: 80px;"
+              />
+              <p>
+                <span class="w3-large w3-text-black w3-margin-right"
+                  >Note de Sirius :</span
+                >
+              </p>
+              <p>"Le Tetris est une discipline sous-côtée, mais pourtant représentative de notre société : sans bases solides, tout s'effondre."</p>
+              <hr />
+
+              <img src="IRINA.png" style="width: 100%;" />
+              <img
+                src="test_mini2.png"
+                alt="Avatar"
+                class="w3-left w3-circle w3-margin-right"
+                style="width: 80px;"
+              />
+              <p>
+                <span class="w3-large w3-text-black w3-margin-right"
+                  >Note de Sirius :</span
+                >
+              </p>
+              <p>"Une femme captivante, vraiment... son aura est telle qu'il n'est étonnant qu'elle aie obtenu son Ultime."</p>
+              <hr />
+              
+            </div>
+            <!-- End photo grid -->
+          </div>
+          <!-- End Portfolio Section -->
+        </div>
+
+        <!-- End About Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer
+        class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge"
+        style="margin: -24px;"
+      >
+        <p class="w3-medium">
+          Powered by
+          <a
+            href="https://www.w3schools.com/w3css/default.asp"
+            target="_blank"
+            class="w3-hover-text-green"
+            >w3.css</a
+          >
+        </p>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+
+    <script>
+      // Open and close sidebar
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
